@@ -18,5 +18,27 @@ public class Calculator {
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+
+        int ten = 10;
+        int eleven = 11;
+        int tenPlusEleven = ten + eleven;
+        System.out.println(tenPlusEleven);
+
+    }
+}
+
+class ArgMethod {
+
+    public static void hello(String name, int age) {
+        System.out.println("Hello, " + name + ", age = " + age);
+    }
+
+    public static void main(String[] args) {
+        String name = "Job4j";
+        int age = 6;
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
     }
 }
