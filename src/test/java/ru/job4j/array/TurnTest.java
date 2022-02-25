@@ -20,11 +20,19 @@ public class TurnTest {
         Assert.assertArrayEquals(expected, result);
     }
 
-   // @Test
-    //public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
-        /*
-            напишите здесь тест, проверяющий переворот массива
-            с нечётным числом элементов, например {1, 2, 3, 4, 5}.
-         */
-  //  }
+    @Test
+    public void whenTurnArrayWith2Elements() {
+        int[] input = new int[] {0, 1};
+        int[] result = Turn.back(input);
+        int[] expected = new int[] {1, 0};
+        Assert.assertArrayEquals(expected, result);
+    }
+
+    @Test
+    public void whenTurnArrayWith10Elements() {
+        int[] input = new int[] {4, 1, 6, 2, 5, -100, 333, 7, 8, 9};
+        int[] result = Turn.back(input);
+        int[] expected = new int[] {9, 8, 7, 333, -100, 5, 2, 6, 1, 4};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
